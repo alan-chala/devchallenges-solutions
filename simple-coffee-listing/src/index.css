@@ -2,4 +2,30 @@
 
 body {
     font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    position: relative;
+    background-color: #111315;
+    padding: 3rem 1.5rem;
+}
+
+@theme {
+    --color-graytext: #6f757c;
+    --color-beige: #fef7ee;
+    --color-darkgray: #1b1d1f;
+}
+
+@utility heading {
+    @apply text-[2rem] text-beige font-semibold;
+}
+
+@utility main {
+    @apply text-center flex items-center justify-center rounded-md shadow gap-4 px-16 z-1 py-10 bg-darkgray min-h-screen max-w-4xl mx-auto;
+}
+
+@utility header-div {
+    @apply max-w-xl mx-auto md:px-10 text-graytext relative z-1;
+}
+
+@utility vector {
+    @apply absolute -top-4 right-1 -z-1;
 }
