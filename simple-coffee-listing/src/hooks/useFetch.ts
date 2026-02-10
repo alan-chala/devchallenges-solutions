@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Coffee } from "../types";
 
 export function useFetch() {
@@ -28,7 +28,9 @@ export function useFetch() {
     }
   }
 
-  fetchData();
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return {
     data,
