@@ -13,6 +13,11 @@ body {
     --color-graytext: #6f757c;
     --color-beige: #fef7ee;
     --color-darkgray: #1b1d1f;
+    --color-yellow: #f6c768;
+    --color-brown: #302522;
+    --color-lightgreen: #bee3cc;
+    --color-lightgray: #6f757c;
+    --color-red: #ed735d;
 }
 
 @utility heading {
@@ -20,7 +25,7 @@ body {
 }
 
 @utility main {
-    @apply text-center flex items-center justify-center rounded-md shadow gap-4 px-16 z-1 py-10 bg-darkgray min-h-screen max-w-4xl mx-auto;
+    @apply text-center flex flex-col items-center justify-center rounded-md shadow gap-8 px-16 z-1 py-10 bg-darkgray max-w-5xl mx-auto;
 }
 
 @utility header-div {
@@ -29,4 +34,17 @@ body {
 
 @utility vector {
     @apply absolute -top-4 right-1 -z-1;
+}
+
+@utility custom-flex {
+    @apply flex items-center justify-between;
+}
+
+@utility paragraph {
+    @apply font-semibold text-[14px];
+}
+
+@utility custom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }

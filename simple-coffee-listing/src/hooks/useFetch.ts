@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { Coffee } from "../types";
 
 export function useFetch() {
-  const [data, setData] = useState<Coffee[] | null>(null);
+  const [data, setData] = useState<Coffee[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 

@@ -1,6 +1,7 @@
 import { useFetch } from "./hooks/useFetch";
 import { Header } from "./components/Header";
 import { Loader } from "./components/Loader";
+import { Cards } from "./components/Cards";
 
 function App() {
   const { data, isLoading } = useFetch();
@@ -13,7 +14,7 @@ function App() {
           <Loader />
         ) : (
           <>
-            <div className="header-div">
+            <section className="header-div">
               <h1 className="heading">Our Collection</h1>
               <img src="./vector.svg" alt="Vector" className="vector" />
               <p>
@@ -21,7 +22,8 @@ function App() {
                 from different roast types and origins, expertly roasted in
                 small batches and shipped fresh weekly.
               </p>
-            </div>
+            </section>
+            <Cards data={data} />
           </>
         )}
       </main>
