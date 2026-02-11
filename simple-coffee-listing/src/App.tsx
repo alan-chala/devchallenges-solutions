@@ -1,5 +1,6 @@
 import { useFetch } from "./hooks/useFetch";
 import { Header } from "./components/Header";
+import { Loader } from "./components/Loader";
 
 function App() {
   const { data, isLoading } = useFetch();
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <main className="main">
         {isLoading ? (
-          <p>Loading...</p>
+          <Loader />
         ) : (
           <>
             <div className="header-div">
