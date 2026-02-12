@@ -8,3 +8,14 @@ export type Coffee = {
   popular: boolean;
   available: boolean;
 };
+
+export type Buttons = {
+  id: number;
+  content: string;
+  value: string;
+};
+
+export type Cards = {
+  activeBtn: string;
+  filter: Coffee[];
+};

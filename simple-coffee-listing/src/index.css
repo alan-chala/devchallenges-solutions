@@ -1,50 +1,58 @@
 @import "tailwindcss";
 
 body {
-    font-family: "DM Sans", sans-serif;
-    min-height: 100vh;
-    position: relative;
-    background-color: #111315;
-    color: #fff;
-    padding: 3rem 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background-color: #111315;
+  color: #fff;
+  padding: 3rem 1.5rem;
 }
 
 @theme {
-    --color-graytext: #6f757c;
-    --color-beige: #fef7ee;
-    --color-darkgray: #1b1d1f;
-    --color-yellow: #f6c768;
-    --color-brown: #302522;
-    --color-lightgreen: #bee3cc;
-    --color-lightgray: #6f757c;
-    --color-red: #ed735d;
+  --color-graytext: #6f757c;
+  --color-beige: #fef7ee;
+  --color-darkgray: #1b1d1f;
+  --color-yellow: #f6c768;
+  --color-brown: #302522;
+  --color-lightgreen: #bee3cc;
+  --color-lightgray: #6f757c;
+  --color-red: #ed735d;
 }
 
 @utility heading {
-    @apply text-[2rem] text-beige font-semibold;
+  @apply text-[2rem] text-beige font-semibold;
 }
 
 @utility main {
-    @apply text-center flex flex-col items-center justify-center rounded-md shadow gap-8 px-16 z-1 py-10 bg-darkgray max-w-5xl mx-auto;
+  @apply text-center flex flex-col items-center justify-center rounded-md shadow gap-8 px-16 z-1 py-16 bg-darkgray max-w-5xl mx-auto;
 }
 
 @utility header-div {
-    @apply max-w-xl mx-auto md:px-10 text-graytext relative z-1;
+  @apply max-w-xl mx-auto md:px-10 text-graytext relative z-1;
 }
 
 @utility vector {
-    @apply absolute -top-4 right-1 -z-1;
+  @apply absolute -top-4 right-1 -z-1;
 }
 
 @utility custom-flex {
-    @apply flex items-center justify-between;
+  @apply flex items-center justify-between;
 }
 
 @utility paragraph {
-    @apply font-semibold text-[14px];
+  @apply font-semibold text-[14px];
 }
 
 @utility custom-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@utility btn {
+  @apply text-beige font-semibold rounded-md shadow px-4 p-2 cursor-pointer transition duration-150;
+}
+
+@utility active-btn {
+  @apply bg-lightgray text-beige font-semibold rounded-md shadow px-4 p-2 cursor-pointer transition duration-150;
 }
