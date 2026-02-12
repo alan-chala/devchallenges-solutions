@@ -1,0 +1,2 @@
+# Simple FAQ Page
+
