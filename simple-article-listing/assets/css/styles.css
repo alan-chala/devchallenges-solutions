@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  max-width: 750px;
+  max-width: 46.875rem;
   margin: 0 auto;
   padding: 2rem 1rem;
   display: flex;
@@ -41,8 +41,8 @@ article {
   gap: 3rem;
 
   img {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     border-radius: 0.8rem;
   }
 }
@@ -65,7 +65,7 @@ p {
   font-weight: 500;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 45rem) {
   .wrapper {
     gap: 4rem;
   }
