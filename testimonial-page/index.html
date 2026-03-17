@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Testimonial page challenge for devChallenges.io" />
+    <meta name="keywords" content="testimonial, review, checklist, academic paper, peer review" />
     <link
       rel="icon"
       href="./assets/images/favicon.ico"
@@ -10,6 +12,7 @@
       sizes="96x96"
     />
     <title>Testimonial Page | devChallenges.io</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,14 +23,18 @@
   <body>
     <main class="main">
       <section class="text-content">
-        <img src="./assets/images/Star_fill.svg" alt="Star fill" />
-        <h1>Reviewers</h1>
-        <p>
-          Reviewers is where people can access guidelines, checklists, and other
-          tools to assist them in reviewing papers or manuscripts. It provides a
-          structured approach to ensure that the review process is thorough,
-          efficient, and consistent.
-        </p>
+        <div class="star">
+          <span>⭐️</span>
+        </div>
+        <div>
+          <h1>Reviewers</h1>
+          <p>
+            Reviewers is where people can access guidelines, checklists, and
+            other tools to assist them in reviewing papers or manuscripts. It
+            provides a structured approach to ensure that the review process is
+            thorough, efficient, and consistent.
+          </p>
+        </div>
         <ul>
           <li>Checklist to Review an Academic Paper</li>
           <li>Peer Review Checklist</li>
@@ -36,14 +43,18 @@
           </li>
         </ul>
       </section>
+
       <section class="card-wrapper">
-        <article class="card">
-          <div>
-            <img
-              src="./assets/images/google-testimonial.svg"
-              alt="Google testimonial"
-            />
-            <span>
+        <article class="card card-1">
+          <div class="image-container">
+            <div>
+              <img
+                src="./assets/images/google-testimonial.svg"
+                alt="Google testimonials"
+                width="100"
+              />
+            </div>
+            <div class="star-container">
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
@@ -52,7 +63,7 @@
                 src="./assets/images/Star_fill_gray.svg"
                 alt="Star fill gray"
               />
-            </span>
+            </div>
           </div>
           <div>
             <h2>Samantha Lee</h2>
@@ -60,19 +71,22 @@
           </div>
         </article>
 
-        <article class="card">
-          <div>
-            <img
-              src="./assets/images/meta-testimonial.svg"
-              alt="Meta testimonial"
-            />
-            <span>
+        <article class="card card-2">
+          <div class="image-container">
+            <div>
+              <img
+                src="./assets/images/meta-testimonial.svg"
+                alt="Google testimonials"
+                width="100"
+              />
+            </div>
+            <div class="star-container">
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
               <img src="./assets/images/Star_fill.svg" alt="Star fill" />
-            </span>
+            </div>
           </div>
           <div>
             <h2>Rachel Patel</h2>
