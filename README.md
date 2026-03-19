@@ -19,6 +19,7 @@ Here are the challenges I have completed so far. Each folder contains the source
 
 | Challenge | Source Code |
 | :--- | :--- |
+| **Business Blog Card** | [View Code](./business-blog-card) |
 | **Join Our Newsletter** | [View Code](./join-our-newsletter) |
 | **Minimal Blog Card** | [View Code](./minimal-blog-card) |
 | **Simple Article Listing** | [View Code](./simple-article-listing) |
