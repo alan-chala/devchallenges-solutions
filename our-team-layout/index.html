@@ -3,55 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a section of a website that introduces the team members of a company or organization. It typically includes photos, names, job titles, and brief descriptions of each team member's role and contributions to the company. The purpose of this section is to give visitors a sense of the people behind the company and to build trust and credibility with potential customers or clients." />
+    <meta name="keywords" content="team, members, company, organization, photos, names, job titles, descriptions, role, contributions, trust, credibility" />
     <link
       rel="icon"
-      href="resources/favicon.ico"
+      href="./assets/images/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
     />
     <title>Meet the Team Section | devChallenges.io</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <main class="main">
-      <section class="section">
-        <article class="card">
-          <span>Our team</span>
-          <h1>Meet the brain</h1>
-          <p>
-            We are proud to have them as part of our community and look forward
-            to continuing to push the boundaries of what's possible in the world
-            of digital art.
-          </p>
-        </article>
+    <main class="page">
+      <section class="team" aria-labelledby="team-title">
+        <div class="team__grid">
+          <header class="team__card team__intro">
+            <span class="team__eyebrow">Our team</span>
+            <h1 id="team-title">Meet the brain</h1>
+            <p>
+              We are proud to have them as part of our community and look forward
+              to continuing to push the boundaries of what's possible in the
+              world of digital art.
+            </p>
+          </header>
 
-        <article class="card liam">
-          <h2>Liam Novak</h2>
-          <p>Software Engineer</p>
-        </article>
+          <article class="team__card team__member team__member--liam">
+            <img
+              src="./assets/images/person_1@2x.png"
+              alt="Portrait of Liam Novak"
+              loading="lazy"
+            />
+            <div class="team__info">
+              <h2>Liam Novak</h2>
+              <p>Software Engineer</p>
+            </div>
+          </article>
 
-        <article class="card sophia">
-          <h2>Sophia Moretti</h2>
-          <p>Business Development Manager</p>
-        </article>
+          <article class="team__card team__member team__member--sophia">
+            <img
+              src="./assets/images/person_2@2x.png"
+              alt="Portrait of Sophia Moretti"
+              loading="lazy"
+            />
+            <div class="team__info">
+              <h2>Sophia Moretti</h2>
+              <p>Business Development Manager</p>
+            </div>
+          </article>
 
-        <article class="card members">
-          <p>See all members</p>
-        </article>
+          <article class="team__card team__member team__member--ethan">
+            <img
+              src="./assets/images/person_3@2x.png"
+              alt="Portrait of Ethan Rossi"
+              loading="lazy"
+            />
+            <div class="team__info">
+              <h2>Ethan Rossi</h2>
+              <p>Business Development Manager</p>
+            </div>
+          </article>
 
-        <article class="card ethan">
-          <h2>Ethan Rossi</h2>
-          <p>Business Development Manager</p>
-        </article>
+          <article class="team__card team__member team__member--isabella">
+            <img
+              src="./assets/images/person_4@2x.png"
+              alt="Portrait of Isabella Ricci"
+              loading="lazy"
+            />
+            <div class="team__info">
+              <h2>Isabella Ricci</h2>
+              <p>UX Designer</p>
+            </div>
+          </article>
 
-        <article class="card ricci">
-          <h2>Isabella Ricci</h2>
-          <p>UX Designer</p>
-        </article>
-
-        <article class="card noah">
-          <h2>Noah Conti</h2>
-          <p>Content Creator</p>
-        </article>
+          <article class="team__card team__member team__member--noah">
+            <img
+              src="./assets/images/person_5@2x.png"
+              alt="Portrait of Noah Conti"
+              loading="lazy"
+            />
+            <div class="team__info">
+              <h2>Noah Conti</h2>
+              <p>Content Creator</p>
+            </div>
+          </article>
+          <div class="team__card team__cta">
+            <a class="team__cta-link" href="#">
+              See all members
+              <span class="team__cta-icon" aria-hidden="true">
+                <img src="./assets/images/arrow up right.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
   </body>
