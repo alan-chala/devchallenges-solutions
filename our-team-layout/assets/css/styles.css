@@ -46,6 +46,10 @@
 
 .team__grid {
   background-color: var(--color-2);
+  background-image: url("../images/Background_decor.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 220px auto;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: repeat(2, 280px);
@@ -67,7 +71,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  background-color: var(--color-2);
+  background-color: transparent;
 }
 
 .team__eyebrow {
@@ -162,7 +166,7 @@
   display: flex;
   align-items: flex-end;
   color: var(--color-3);
-  background-color: var(--color-2);
+  background-color: transparent;
 }
 
 .team__cta-link {
