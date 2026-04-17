@@ -24,6 +24,7 @@ Here are the challenges I have completed so far. Each folder contains the source
 | **Flip the Coin** | [View Code](./flip-the-coin) |
 | **Join Our Newsletter** | [View Code](./join-our-newsletter) |
 | **Minimal Blog Card** | [View Code](./minimal-blog-card) |
+| **Our Team Layout** | [View Code](./our-team-layout) |
 | **Simple Article Listing** | [View Code](./simple-article-listing) |
 | **Simple Coffee Listing** | [View Code](./simple-coffee-listing) |
 | **Simple FAQ** | [View Code](./simple-faq) |
