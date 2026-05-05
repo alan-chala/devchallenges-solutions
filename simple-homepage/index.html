@@ -1,73 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       href="resources/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
     />
-
     <title>Simple Homepage - Alarado | devChallenges.io</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <!-- 
-    About us
+    <nav class="nav">
+      <div>
+        <img src="./assets/images/logo-light.svg" alt="Logo" />
+      </div>
 
-    Product
+      <div class="nav-link">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Resource</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="toggle-theme" aria-label="Toggle theme button">
+          <img src="./assets/images/Moon_fill_light.svg" alt="Moon Icon" />
+          <img src="./assets/images/Sun_fill.svg" alt="Sun Icon" />
+        </button>
+      </div>
+    </nav>
 
-    Resource
-
-    Contact
-
-    😎 Simple way to communicate
-
-    Actions for Accessibility in Design
-
-    The fastest way to build and deploy websites with resusable components.
-
-    Get Started
-
-    Get live demo
-
-    No credit card required
-
-    No software to install
-
-    -->
-
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
+    <header class="header">
+      <div class="text-content">
+        <p>😎 Simple way to communicate</p>
+        <h1>Actions for Accessibility in Design</h1>
+        <p>
+          The fastest way to build and deploy websites with resusable
+          components.
+        </p>
+        <div class="button-wrapper">
+          <button>Get Started</button>
+          <button>Get live demo</button>
+        </div>
+        <footer>
+          <div>
+            <img
+              src="./assets/images/Done_ring_round_fill.svg"
+              alt="Done ring round icon"
+            />
+            <p>No credit card required</p>
+          </div>
+          <div>
+            <img
+              src="./assets/images/Done_ring_round_fill.svg"
+              alt="Done ring round icon"
+            />
+            <p>No software to install</p>
+          </div>
+        </footer>
+      </div>
+      <div class="image-content">
+        <img
+          src="./assets/images/hero-image-simple-homepage.png"
+          alt="Hero image homepage"
+        />
+      </div>
+    </header>
   </body>
 </html>
