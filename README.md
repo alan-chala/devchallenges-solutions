@@ -28,6 +28,7 @@ Here are the challenges I have completed so far. Each folder contains the source
 | **Simple Article Listing** | [View Code](./simple-article-listing) |
 | **Simple Coffee Listing** | [View Code](./simple-coffee-listing) |
 | **Simple FAQ** | [View Code](./simple-faq) |
+| **Simple Homepage** | [View Code](./simple-homepage) |
 | **Testimonial Page** | [View Code](./testimonial-page) |
 
 *(Note: You can view the live, deployed versions of these projects by clicking the GitHub Pages link in the "Deployments" section on the right sidebar).*
