@@ -16,6 +16,11 @@
   --color-7: #2a4dd0;
 }
 
+.dark-mode {
+  --color-1: #223344;
+  --color-4: #f2f9fe;
+}
+
 body,
 html {
   font-family: "Poppins", sans-serif;
@@ -64,10 +69,11 @@ html {
 
 .toggle-theme {
   background-color: var(--color-5);
+  transition: all ease 0.3s;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70px;
+  width: 65px;
   border-radius: 2rem;
   border: none;
   padding: 0.3rem;
@@ -75,6 +81,10 @@ html {
   z-index: 1;
   cursor: pointer;
   margin-left: auto;
+}
+
+.toggle-theme img {
+  color: coral;
 }
 
 .toggle-theme::before {
@@ -86,6 +96,10 @@ html {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
+}
+
+.dark-mode .toggle-theme::before {
+  left: 0.2rem;
 }
 
 .header {
@@ -155,6 +169,17 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.dark-mode .text-content p,
+.dark-mode .text-content button,
+.nav ul li:first-child a {
+  color: var(--color-4);
+}
+
+.dark-mode .nav ul li:first-child a,
+.dark-mode .text-content button:last-of-type {
+  text-decoration-color: var(--color-4);
 }
 
 footer {
