@@ -27,6 +27,7 @@ html {
   background-color: var(--color-1);
   color: var(--color-4);
   min-height: 100dvh;
+  position: relative;
 }
 
 .nav {
@@ -73,7 +74,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 65px;
+  width: 62px;
   border-radius: 2rem;
   border: none;
   padding: 0.3rem;
@@ -81,10 +82,6 @@ html {
   z-index: 1;
   cursor: pointer;
   margin-left: auto;
-}
-
-.toggle-theme img {
-  color: coral;
 }
 
 .toggle-theme::before {
@@ -100,6 +97,11 @@ html {
 
 .dark-mode .toggle-theme::before {
   left: 0.2rem;
+}
+
+.close-btn,
+.open-btn {
+  display: none;
 }
 
 .header {
@@ -208,5 +210,57 @@ footer p {
   .header,
   .nav {
     padding: 2rem;
+  }
+
+  .nav-link {
+    position: fixed;
+    top: 0;
+    right: -1000rem;
+    min-height: 100dvh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 0;
+    margin: 0;
+    transition: all ease 0.3s;
+    background-color: var(--color-2);
+  }
+
+  .nav-link.active {
+    right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex: 0;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .nav ul li a {
+    font-size: 2rem;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .toggle-theme {
+    flex: 0;
+    margin: 0 auto;
+  }
+
+  .close-btn,
+  .open-btn {
+    display: inline-block;
+    cursor: pointer;
+    background-color: none;
+    border: none;
   }
 }

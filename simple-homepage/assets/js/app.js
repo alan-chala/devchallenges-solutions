@@ -5,6 +5,18 @@ const sunIcon = document.querySelector(".sun");
 
 const BODY = document.body;
 
+const activeTheme = localStorage.getItem("active-theme");
+
+if (activeTheme == "dark") {
+  BODY.classList.add("dark-mode");
+  logoImg.src = "./assets/images/logo-dark.svg";
+  moonIcon.src = "./assets/images/Moon_fill.svg";
+} else {
+  BODY.classList.remove("dark-mode");
+  logoImg.src = "./assets/images/logo-light.svg";
+  moonIcon.src = "./assets/images/Moon_fill_light.svg";
+}
+
 toggleBtn.addEventListener("click", () => {
   BODY.classList.toggle("dark-mode");
 
@@ -19,14 +31,14 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
-const activeTheme = localStorage.getItem("active-theme");
+const openBtn = document.querySelector(".open-btn");
+const closeBtn = document.querySelector(".close-btn");
+const navLink = document.querySelector(".nav-link");
 
-if (activeTheme == "dark") {
-  BODY.classList.add("dark-mode");
-  logoImg.src = "./assets/images/logo-dark.svg";
-  moonIcon.src = "./assets/images/Moon_fill.svg";
-} else {
-  BODY.classList.remove("dark-mode");
-  logoImg.src = "./assets/images/logo-light.svg";
-  moonIcon.src = "./assets/images/Moon_fill_light.svg";
-}
+openBtn.addEventListener("click", () => {
+  navLink.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  navLink.classList.remove("active");
+});
