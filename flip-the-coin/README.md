@@ -1,5 +1,5 @@
 # Flip The Coin
 
-# Preview
+## Preview
 
 ![alt text](assets/images/preview.png)
