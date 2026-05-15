@@ -1,5 +1,5 @@
 # Simple FAQ Page
 
-# Preview
+## Preview
 
 ![alt text](assets/images/preview.png)
