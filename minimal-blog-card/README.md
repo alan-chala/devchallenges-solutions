@@ -1,6 +1,6 @@
 # Minimal Blog Card
 
-# preview
+## preview
 
 ![alt text](assets/images/preview.png)
 
