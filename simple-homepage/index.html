@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("active-theme");
+
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-mode");
+        }
+      })();
+    </script>
     <link
       rel="icon"
       href="resources/favicon.ico"

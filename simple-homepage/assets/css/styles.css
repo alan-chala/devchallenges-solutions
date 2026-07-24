@@ -227,6 +227,10 @@ footer p {
     background-color: var(--color-2);
   }
 
+  .dark-mode .nav-link {
+    background-color: var(--color-5);
+  }
+
   .nav-link.active {
     right: 0;
   }
