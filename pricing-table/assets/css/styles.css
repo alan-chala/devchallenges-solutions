@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  --color-1: #121826;
+  --color-2: #e5e7eb;
+  --color-3: #ffffff;
+  --color-4: #263fa9;
+  --color-5: #f8fafc;
+  --color-6: #4d5562;
+  --color-7: #7c4f1e;
+  --color-8: #4d556233;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--color-3);
+  min-height: 100dvh;
+}
+
+header {
+  background-color: var(--color-5);
+  text-align: center;
+  padding: 3rem;
+}
+
+header h1 {
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+header p {
+  color: var(--color-6);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+thead div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+  padding: 2rem;
+}
+
+thead div span {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--color-4);
+}
+
+.price {
+  font-size: 3.5rem;
+}
+
+thead div p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-6);
+}
+
+tbody th {
+  text-align: left;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--color-8);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-1);
+  background-color: var(--color-5);
+}
+
+tbody td,
+tfoot td {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 15px;
+}
+
+tbody td {
+  border-bottom: 1px solid var(--color-8);
+  font-weight: 400;
+}
+
+tfoot td {
+  color: var(--color-4);
+  font-weight: 600;
+}
+
+.popular {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.popular,
+tbody td:nth-child(4) {
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
+
+tfoot td:nth-child(4) {
+  background-color: var(--color-7);
+  color: var(--color-3);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.popular span {
+  color: var(--color-3);
+  background-color: var(--color-4);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.popular p {
+  color: var(--color-3);
+}
