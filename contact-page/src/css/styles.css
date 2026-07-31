@@ -1,0 +1,138 @@
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #fff;
+  --color-2: #4036a9;
+  --color-3: #111729;
+  --color-4: #cdd5e0;
+  --color-5: #ffffff33;
+  --color-6: #400f21;
+}
+
+body,
+html {
+  min-height: 100dvh;
+}
+
+body {
+  width: 100%;
+  background: url("/src/images/background.svg") no-repeat center center;
+  background-size: cover;
+  color: var(--color-1);
+}
+
+.nav {
+  padding: 1.5rem 4rem;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.header,
+.form {
+  max-width: 720px;
+}
+
+.form {
+  background-color: var(--color-5);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem auto 0;
+  border-radius: 0.8rem;
+}
+
+.form .wrapper {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form label {
+  font-weight: 600;
+}
+
+.form input,
+.form select,
+.form textarea {
+  margin: 0.25rem 0;
+}
+
+.form input,
+.form select,
+.form textarea,
+.form button {
+  display: block;
+  padding: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-3);
+}
+
+*::placeholder {
+  color: var(--color-3);
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form button {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--color-2);
+}
+
+.error-message {
+  color: var(--color-6);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 57.5rem) {
+  .nav {
+    padding: 1.5rem 1rem;
+  }
+
+  .h1 {
+    font-size: 1.7rem;
+  }
+
+  .h2 {
+    font-size: 1.2rem;
+  }
+
+  .main {
+    padding: 0 1rem 1.5rem;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
+  .form .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
