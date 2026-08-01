@@ -20,6 +20,7 @@ Here are the challenges I have completed so far. Each folder contains the source
 | Challenge | Source Code |
 | :--- | :--- |
 | **Business Blog Card** | [View Code](./business-blog-card) |
+| **Contact Page** | [View Code](./contact-page) |
 | **Feature Section** | [View Code](./feature-section) |
 | **Flip the Coin** | [View Code](./flip-the-coin) |
 | **Join Our Newsletter** | [View Code](./join-our-newsletter) |
