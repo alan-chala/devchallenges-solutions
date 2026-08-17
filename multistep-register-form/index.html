@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Multi-step Register Form | devChallenges.io" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Form, Multi-step Form" />
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -12,49 +14,58 @@
     <title>Multi-step Register Form | devChallenges.io</title>
   </head>
   <body>
-    <!-- 
+    <main>
+      <article class="tabs tab-1">
+        <h1>Register</h1>
 
-    Register
+        <label name="name">
+          Name
+          <input id="name" name="name" placeholder="Enter your name" />
+        </label>
 
-    Name
+        <label name="email">
+          Email
+          <input id="email" name="email" placeholder="Example@gmail.com" />
+        </label>
 
-    Enter your name
+        <button type="button">Continue</button>
+      </article>
 
-    Email
+      <article class="tabs tab-2">
+        <h2>Which topics you are interested in?</h2>
 
-    Example@gmail.com
+        <label name="software-development">
+          <input
+            type="checkbox"
+            id="software-development"
+            name="software-development"
+          />
+          Software Development
+        </label>
 
-    Continue
+        <label name="user-experience">
+          <input type="checkbox" id="user-experience" name="user-experience" />
+          User Experience
+        </label>
 
-    Step 1 of 3
+        <label name="graphic-design">
+          <input type="checkbox" id="graphic-design" name="graphic-design" />
+          Graphic Design
+        </label>
 
-    Which topics you are interested in?
+        <button type="button">Continue</button>
+      </article>
 
-    Software Development
-
-    User Experience
-    
-    Graphic Design
-
-    Step 2 of 3
-
-    Summary
-
-    Name: Emily Johnson
-    Email: emily@emilyjohnsonstl.com
-
-    Topics:
-    User Experience
-    Graphic Design
-
-    Step 3 of 3
-     -->
-
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
+      <article class="tabs tab-3">
+        <h2>Summary</h2>
+        <p>Name: Emily Johnson</p>
+        <p>Email: emily@emilyjohnsonstl.com</p>
+        <p>Topics:</p>
+        <ul>
+          <li>User Experience</li>
+          <li>Graphic Design</li>
+        </ul>
+      </article>
+    </main>
   </body>
 </html>
