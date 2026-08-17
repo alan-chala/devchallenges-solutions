@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Multi-step Register Form | devChallenges.io" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, Form, Multi-step Form" />
+    <meta
+      name="description"
+      content="Multi-step Register Form | devChallenges.io"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Form, Multi-step Form"
+    />
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -13,7 +19,6 @@
     />
     <title>Multi-step Register Form | devChallenges.io</title>
     <style>
-
       .step {
         display: none;
       }
@@ -22,10 +27,14 @@
         display: block;
       }
 
+      .message-1,
+      .message-2 {
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <form>
+    <form class="form">
       <article class="step active">
         <h1>Register</h1>
 
@@ -39,6 +48,8 @@
           <input id="email" name="email" placeholder="Example@gmail.com" />
         </label>
 
+        <span class="message-1">All fields are required!</span>
+
         <button class="first-next" type="button">Continue</button>
       </article>
 
@@ -50,19 +61,32 @@
             type="checkbox"
             id="software-development"
             name="software-development"
+            value="Software Development"
           />
           Software Development
         </label>
 
         <label name="user-experience">
-          <input type="checkbox" id="user-experience" name="user-experience" />
+          <input
+            type="checkbox"
+            id="user-experience"
+            name="user-experience"
+            value="User Experience"
+          />
           User Experience
         </label>
 
         <label name="graphic-design">
-          <input type="checkbox" id="graphic-design" name="graphic-design" />
+          <input
+            type="checkbox"
+            id="graphic-design"
+            name="graphic-design"
+            value="Graphic Design"
+          />
           Graphic Design
         </label>
+
+        <span class="message-2">Please, mark at least one option!</span>
 
         <button class="second-next" type="button">Continue</button>
       </article>
@@ -70,11 +94,11 @@
       <article class="step">
         <h2>Summary</h2>
 
-        <p>Name: Emily Johnson</p>
-        <p>Email: emily@emilyjohnsonstl.com</p>
+        <p>Name: <span class="name">Emily Johnson</span></p>
+        <p>Email: <span class="email">emily@emilyjohnsonstl.com</span></p>
         <p>Topics:</p>
 
-        <ul>
+        <ul class="topics">
           <li>User Experience</li>
           <li>Graphic Design</li>
         </ul>
