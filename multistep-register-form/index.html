@@ -12,10 +12,21 @@
       sizes="96x96"
     />
     <title>Multi-step Register Form | devChallenges.io</title>
+    <style>
+
+      .step {
+        display: none;
+      }
+
+      .step.active {
+        display: block;
+      }
+
+    </style>
   </head>
   <body>
-    <main>
-      <article class="tabs tab-1">
+    <form>
+      <article class="step active">
         <h1>Register</h1>
 
         <label name="name">
@@ -28,10 +39,10 @@
           <input id="email" name="email" placeholder="Example@gmail.com" />
         </label>
 
-        <button type="button">Continue</button>
+        <button class="first-next" type="button">Continue</button>
       </article>
 
-      <article class="tabs tab-2">
+      <article class="step">
         <h2>Which topics you are interested in?</h2>
 
         <label name="software-development">
@@ -53,19 +64,25 @@
           Graphic Design
         </label>
 
-        <button type="button">Continue</button>
+        <button class="second-next" type="button">Continue</button>
       </article>
 
-      <article class="tabs tab-3">
+      <article class="step">
         <h2>Summary</h2>
+
         <p>Name: Emily Johnson</p>
         <p>Email: emily@emilyjohnsonstl.com</p>
         <p>Topics:</p>
+
         <ul>
           <li>User Experience</li>
           <li>Graphic Design</li>
         </ul>
+
+        <button type="submit">Continue</button>
       </article>
-    </main>
+    </form>
+
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
