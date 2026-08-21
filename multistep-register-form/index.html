@@ -18,24 +18,11 @@
       sizes="96x96"
     />
     <title>Multi-step Register Form | devChallenges.io</title>
-    <style>
-      .step {
-        display: none;
-      }
-
-      .step.active {
-        display: block;
-      }
-
-      .message-1,
-      .message-2 {
-        display: none;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <form class="form">
-      <article class="step active">
+      <article class="step step-1 active">
         <h1>Register</h1>
 
         <label name="name">
@@ -51,47 +38,61 @@
         <span class="message-1">All fields are required!</span>
 
         <button class="first-next" type="button">Continue</button>
+
+        <div class="progress" aria-label="Step 1 of 3">
+          <span class="step-label">Step 1 of 3</span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </article>
 
-      <article class="step">
+      <article class="step step-2">
         <h2>Which topics you are interested in?</h2>
 
-        <label name="software-development">
+        <label class="topic-option" name="software-development">
           <input
             type="checkbox"
             id="software-development"
             name="software-development"
             value="Software Development"
           />
-          Software Development
+          <span>Software Development</span>
         </label>
 
-        <label name="user-experience">
+        <label class="topic-option" name="user-experience">
           <input
             type="checkbox"
             id="user-experience"
             name="user-experience"
             value="User Experience"
           />
-          User Experience
+          <span>User Experience</span>
         </label>
 
-        <label name="graphic-design">
+        <label class="topic-option" name="graphic-design">
           <input
             type="checkbox"
             id="graphic-design"
             name="graphic-design"
             value="Graphic Design"
           />
-          Graphic Design
+          <span>Graphic Design</span>
         </label>
 
         <span class="message-2">Please, mark at least one option!</span>
 
         <button class="second-next" type="button">Continue</button>
+
+        <div class="progress" aria-label="Step 2 of 3">
+          <span class="step-label">Step 2 of 3</span>
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
       </article>
 
-      <article class="step">
+      <article class="step step-3">
         <h2>Summary</h2>
 
         <p>Name: <span class="name">Emily Johnson</span></p>
@@ -103,7 +104,14 @@
           <li>Graphic Design</li>
         </ul>
 
-        <button type="submit">Continue</button>
+        <button type="submit">Confirm</button>
+
+        <div class="progress" aria-label="Step 3 of 3">
+          <span class="step-label">Step 3 of 3</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot active"></span>
+        </div>
       </article>
     </form>
 
